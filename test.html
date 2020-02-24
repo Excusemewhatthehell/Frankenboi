@@ -3,11 +3,46 @@
 <head>
 	<title>Frankly my dear, I don't give a Stein.</title>
 </head>
-<body>
-	<h1>Big Frankensteins</h1>
+<style>
+	.border {
+		border-width: 5px;
+		border-color: #FF00E0;
+		border-style: solid;
+		border-radius: 90%;
+		box-shadow: 10px 0px 10px 5px #800080;
+		width: 250px;
+	}
+	.body {
+		height: 10000px;
+		background: repeating-linear-gradient(
+			90deg,
+			#800080 0px,
+			#800080 40px,
+			#FF00E0 40px,
+			#FF00E0 80px
+			);
+	}
+	button {
+		border-radius: 5px;
+		color: #800080;
+		background-color: #FF00E0;
+	}
+	button:hover {
+		animation-name: background-color;
+		animation-duration: 500ms;
+		animation-fill-mode: forwards;
+	}
+	@keyframes background-color {
+		100% {
+			background-color: #FFFF00;
+		}
+	}
+</style>
+<body class="body">
+	<h1 style="color: #FF00E0; text-shadow: 5px 2px #800080">Big Frankensteins</h1>
 	<p><b>Italic</b> is <i>bold</i>.</p>
 	<p> That's the creature, not Frankenstein. </p>
-	<br><img src="https://i2.lisimg.com/8179272/411full.jpg">
-	<br><a href="https://google.com" target="_blank" title="Frankenstein was not a doctor.">Frank me.</a>
+	<br><a href="https://www.youtube.com/watch?v=r96U_C17JyQ" target="_blank"><img class="border" src="img/Hairystein.jpg"></a>
+	<br><button href="https://google.com" target="_blank" title="Frankenstein was not a doctor.">The creature à la Tommy Wiseau.</button>
 </body>
 </html>
